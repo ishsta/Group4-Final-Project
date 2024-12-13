@@ -3,9 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ishsta's Page</title>
+    <!-- using Lance's styling as current placeholder CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #c5decd;
+            text-align: center;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .description {
+            max-width: 600px;
+            margin: 0 auto;
+            margin-bottom: 10%;
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #555;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+            
+        #imageContainer {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        #champImage {
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
+<header>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="ishsta.html">Ishsta</a>
+        <a href="lancelot.html">Lancelot</a>
+        <a href="michelle.html">Michelle</a>
+    </div>
+</header>
 <body>
+    <h1>League of Legends</h1>
+    <div class="description">
+        <p>League of Legends is a Multiplayer Online Battle Arena (MOBA) Game. It is a 5v5 game where the main objective is to slay enemy champions and destroy their base. Each team is constructed of 5 different positions, each position playing its own crucial role in the objective of the game. League includes over 160 unique champions to choose from to fit these roles.</p>
+        <h2>Lux: My favorite champion</h2>
+        <p>Luxanna Crownguard, better known as Lux, is a champion in League of Legends. She is a bright and optimistic character with a deep connection to light magic, representing her homeland’s ideals of justice and righteousness.</p>
+        <div id="imageContainer">
+            <img id="champImage" src="assets/images/elementalist_lux.jpg" alt="Elementalist Lux">
+        </div>
+    </div>
+
+    <div class="description">
+        <div id="imageContainer">
+           <img id="champImage" src="" alt="League Champion Splash Art">
+        </div>
+        <h2 id="champName"></h2>
+        <p id="champLore"></p>
+    </div>
+
+    <button class="btn" onclick="">Generate a League Character</button>
+
+    
     
 </body>
 </html>
