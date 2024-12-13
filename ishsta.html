@@ -27,7 +27,7 @@
             padding: 10px 20px;
             font-size: 1em;
             color: white;
-            background-color: #007bff;
+            background-color: #715aff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -42,6 +42,13 @@
             justify-content: center;
             margin-top: 20px;
         }
+        .styleImage {
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
         #champImage {
             margin-top: 20px;
             max-width: 100%;
@@ -52,12 +59,12 @@
     </style>
 </head>
 <header>
-    <div>
+    <nav class="nav-bar">
         <a href="index.html">Home</a>
         <a href="ishsta.html">Ishsta</a>
         <a href="lancelot.html">Lancelot</a>
         <a href="michelle.html">Michelle</a>
-    </div>
+    </nav>
 </header>
 <body>
     <h1>League of Legends</h1>
@@ -66,21 +73,29 @@
         <h2>Lux: My favorite champion</h2>
         <p>Luxanna Crownguard, better known as Lux, is a champion in League of Legends. She is a bright and optimistic character with a deep connection to light magic, representing her homeland’s ideals of justice and righteousness.</p>
         <div id="imageContainer">
-            <img id="champImage" src="assets/images/elementalist_lux.jpg" alt="Elementalist Lux">
+            <img class="styleImage" src="assets/images/elementalist_lux.jpg" alt="Elementalist Lux">
         </div>
     </div>
 
     <div class="description">
         <div id="imageContainer">
-           <img id="champImage" src="" alt="League Champion Splash Art">
+           <img id="champImage" src="" alt="League Champion Splash Art" style="display: none;">
         </div>
         <h2 id="champName"></h2>
         <p id="champLore"></p>
     </div>
 
-    <button class="btn" onclick="">Generate a League Character</button>
+    <input type="text" id="characterName" placeholder="Enter character">
+    <button class="btn" onclick="fetchData()">Show Character</button>
 
-    
+    <script src="assets/js/ishstascript.js"></script>
     
 </body>
+<footer>
+    <p>Leave us your Email if you want to connect!</p>
+    <form action="#" method="post">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <input type="submit" value="Subscribe">
+    </form>
+</footer>
 </html>
