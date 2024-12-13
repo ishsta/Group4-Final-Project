@@ -11,4 +11,3 @@ Lancelot:
 
 Michelle:
 My page has pictures of my family and me. I also have my cute kitty cats to enjoy! I have lots of interests to choose from, but for this page, I focused on cooking. Included are my own concoctions. Contact me if you would like some more!
-

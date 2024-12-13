@@ -24,171 +24,169 @@
     <div class="RandomCoffeePicture"></div>
       <div class="imageContainer"></div>
 
-<style>
-    .body {
-      background-color: #9296d7;
-    }
-    
+      <style>
+        .body {
+          background-color: #9296d7;
+        }
+        
+          
       
-  
-.topnav {
-  overflow: hidden;
-  background-color: #161663;
-  padding: 1em 0;
-}
-
-
-
-.topnav a.active {
-  background-color: #161663;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-    color: #5b3bad;
-}
-
-    * {box-sizing: border-box}
-    body {font-family: Verdana, sans-serif; margin:0; background-color: #9296d7 }
-
-    #imageContainer {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        #RandomCoffeePicture {
-            margin-top: 20px;
-            max-width: 20%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        }
-    
-    /* Slideshow container */
-    .slideshow-container {
-      max-width: 1000px;
-      position: relative;
-      margin: auto;
+    .topnav {
+      overflow: hidden;
+      background-color: #161663;
+      padding: 1em 0;
     }
     
-    /* Next & previous buttons */
-    .prev, .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      padding: 16px;
-      margin-top: -22px;
-      color: rgb(215, 51, 144);
-      font-weight: bold;
-      font-size: 35px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-    }
     
-    /* Position the "next button" to the right */
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
     
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover, .next:hover {
-      background-color: rgba(0,0,0,0.8);
-    }
-    
-    /* Caption text */
-    .text {
-      color: #f08e2c;
-      font-size: 15px;
-      padding: 8px 12px;
-      position: absolute;
-      bottom: 8px;
-      width: 100%;
+    .topnav a.active {
+      background-color: #161663;
+      color: white;
       text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
     }
     
-    .numbertext {
-      color: #f2f2f2;
-      font-size: 12px;
-      padding: 8px 12px;
-      position: absolute;
-      top: 0;
+    .topnav a:hover {
+        color: #5b3bad;
     }
     
-     /*The dots/bullets/indicators */
-    .dot {
-      cursor: pointer;
-      height: 15px;
-      width: 15px;
-      margin: 0 2px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-    }
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0; background-color: #9296d7 }
     
-    .active, .dot:hover {
-      background-color: #7b4040;
+        #imageContainer {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+            }
+            #RandomCoffeePicture {
+                margin-top: 20px;
+                max-width: 20%;
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            }
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: rgb(215, 51, 144);
+          font-weight: bold;
+          font-size: 25px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+        
+        /* Caption text */
+        .text {
+          color: #f08e2c;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+         /*The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+          background-color: #7b4040;
+        }
+        
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+        
+        footer {
+        background: #161663;
+        color: white;
+        text-align: center;
+        padding: 1em 0;
     }
-    
-    /* Fading animation */
-    .fade {
-      animation-name: fade;
-      animation-duration: 1.5s;
+    footer form {
+        margin-top: 1em;
     }
-    
-    @keyframes fade {
-      from {opacity: .4} 
-      to {opacity: 1}
+    footer input[type="email"] {
+        padding: 0.5em;
+        width: 200px;
     }
-    
-    /* On smaller screens, decrease text size */
-    @media only screen and (max-width: 300px) {
-      .prev, .next,.text {font-size: 11px}
+    footer input[type="submit"] {
+        padding: 0.5em 1em;
+        background: #f0b641;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s;
     }
-    
-    footer {
-    background: #161663;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-}
-footer form {
-    margin-top: 1em;
-}
-footer input[type="email"] {
-    padding: 0.5em;
-    width: 200px;
-}
-footer input[type="submit"] {
-    padding: 0.5em 1em;
-    background: #f0b641;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-footer input[type="submit"]:hover {
-    background: #d2c6c6;
-}
+    footer input[type="submit"]:hover {
+        background: #d2c6c6;
+    }
+      
+      footer {
+        color: rgb(195, 186, 204);
+        margin-left: 20px;
+      }
+       
+       
   
-  footer {
-    color: rgb(195, 186, 204);
-    margin-left: 20px;
-  }
-   
-   
-
-
-
-
-    </style>
+    
+        </style>
     </head>
     <body>
     
@@ -251,10 +249,7 @@ footer input[type="submit"]:hover {
       dots[slideIndex-1].className += " active";
     }
     
- 
 
-
-    
     </script>
 
   
@@ -407,14 +402,13 @@ footer input[type="submit"]:hover {
 <div><div style="text-align:center">
  <h5> Sometimes you want some coffee to go with your dinner. </h5>
    <button class="btn" onclick="showRandomImage()">Coffee love</button>
-
-  <div id="imageContainer">
+   
+  <div id="RandomCoffeePicture">
       <img id="RandomCoffeePicture" src="" alt="">
+    </div>
+     <script src="../Group4->Final-Project\assets\michellescript.js">
     
- 
-    <script src="..\Group4-Final-Project\assets\michellescript.js"></script>
-    
-  </div>
+  
 <p></p>
 </body>
 <footer>
