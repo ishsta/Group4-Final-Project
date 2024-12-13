@@ -1,12 +1,14 @@
 
 function showRandomImage() {
 
-    fetch("https://www.thecocktaildb.com/api/json/v1/1/random.php")
+  
+  fetch("https://coffee.alexflipnote.dev/random")
     .then(response => response.json())
     .then(data => {
-        const cocktailImage = document.getElementById('cocktailImage');
-        cocktailImageImage.src = data.message;
-        //cocktailImageImage.style.display = 'block';
+        const RandomCoffeePicture = document.getElementById('RandomCoffeePicture');
+        RandomCoffeePicture.src = data.message;
+        RandomCoffeePicture.style.display = 'block';
+
     })
-  .catch((error) => console.error("FETCH ERROR:", error));}
- 
+    .catch(error => console.error('Error fetching coffee picture:', error));}
+    

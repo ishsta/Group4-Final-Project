@@ -20,8 +20,9 @@
            
         </h2>
       <div class="footer">
-      </div>
-    
+     
+    <div class="RandomCoffeePicture"></div>
+      <div class="imageContainer"></div>
 
 <style>
     .body {
@@ -53,7 +54,19 @@
 
     * {box-sizing: border-box}
     body {font-family: Verdana, sans-serif; margin:0; background-color: #9296d7 }
-  
+
+    #imageContainer {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        #RandomCoffeePicture {
+            margin-top: 20px;
+            max-width: 20%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
     
     /* Slideshow container */
     .slideshow-container {
@@ -238,7 +251,7 @@ footer input[type="submit"]:hover {
       dots[slideIndex-1].className += " active";
     }
     
-   
+ 
 
 
     
@@ -392,19 +405,16 @@ footer input[type="submit"]:hover {
     <p></p>
 </div>
 <div><div style="text-align:center">
- <h5> Sometimes you want a nice drink to go with your dinner. Click for an idea!</h5>
-   <button class="btn" onclick="showRandomImage()">Cocktail to have with dinner</button>
+ <h5> Sometimes you want some coffee to go with your dinner. </h5>
+   <button class="btn" onclick="showRandomImage()">Coffee love</button>
 
   <div id="imageContainer">
-      <img id="cocktailImage" src="" alt="">
-    </div>
- 
-   
-      <script src="../assets/michellescript.js"></script>
-      
+      <img id="RandomCoffeePicture" src="" alt="">
     
-<p></p>
-<p></p>
+ 
+    <script src="..\Group4-Final-Project\assets\michellescript.js"></script>
+    
+  </div>
 <p></p>
 </body>
 <footer>
